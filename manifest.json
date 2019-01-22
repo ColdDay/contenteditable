@@ -1,0 +1,23 @@
+{
+    "name": "页面编辑",
+    "description" : "页面编辑",
+    "version": "1.0",
+     "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "edit.png"
+    },
+    "background": {
+        "scripts": [
+          "index.js",
+          "main.js"
+      ]
+    },
+      "permissions": [
+        "tabs",
+        "notifications",
+        "idle",
+        "http://*/",
+        "https://*/"
+      ]
+ }
