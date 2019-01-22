@@ -1,23 +1,15 @@
 {
-    "name": "页面编辑",
-    "description" : "页面编辑",
-    "version": "1.0",
+    "name": "网页在线编辑",
+    "description" : "网页在线编辑",
+    "version": "1.3",
      "manifest_version": 2,
     "browser_action": {
         "default_popup": "index.html",
         "default_icon": "edit.png"
     },
-    "background": {
-        "scripts": [
-          "index.js",
-          "main.js"
-      ]
-    },
-      "permissions": [
+    "web_accessible_resources": ["index.js"],
+    "permissions": [
         "tabs",
-        "notifications",
-        "idle",
-        "http://*/",
-        "https://*/"
+        "activeTab"
       ]
  }
